@@ -31,6 +31,7 @@ We are hoping to see a mobile first responsive site with appropriate best practi
 
 1. Use of css variables
 
+If you are struggling with styling use this https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 Do not worry if you struggle to complete this test, we will break down any work done during an interview.
 
