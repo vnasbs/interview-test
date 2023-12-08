@@ -1,13 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is part of my job interview with Formation Media."
+    />
+    <meta name="keywords" content="Formation, formation media" />
+    <meta name="author" content="Virginie Sibers" />
+
+    <title>Formation Media | Virginie Sibers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main>
-        <h1>Hello World!</h1>  
-    </main>
-	<script src="index.js"></script>
+    <nav class="nav">
+      <img src="assets/logo.png" id="logo" />
+      <ul>
+        <li class="item-large"><a href="#">Home</a></li>
+        <li class="item-large">News</li>
+        <li class="item-large">Video</li>
+        <li class="item-large">Members</li>
+        <li class="item-large">Become a Member</li>
+        <li><img src="assets/icons/search.svg" class="nav-icon" /></li>
+        <li><img src="assets/icons/profile.svg" class="nav-icon" /></li>
+        <li id="menu">
+          <img
+            src="assets/icons/menu.png"
+            id="menu-icon"
+            onclick="toggleMenu()"
+          />
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header"><h1 class="header-title">Hot News</h1></header>
+
+    <div class="container">
+      <main class="main">
+        <img src="assets/icons/one.png" alt="one icon" class="top-icon-main" />
+        <div class="main-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </div>
+        <div class="main-details">
+          <span class="detail"
+            ><img
+              src="assets/icons/profile.svg"
+              alt="profile icon"
+              class="main-icons"
+            />BY VIRGINIE SIBERS</span
+          >
+
+          <span class="detail"
+            ><img
+              src="assets/icons/calendar.png"
+              alt="profile icon"
+              class="main-icons"
+            />08/12/23</span
+          >
+
+          <span class="detail"
+            ><img
+              src="assets/icons/time.png"
+              alt="profile icon"
+              class="main-icons"
+            />2 MINS AGO</span
+          >
+        </div>
+        <button class="main-btn">Read</button>
+      </main>
+
+      <aside class="aside">
+        <div class="aside-box">
+          <img
+            src="assets/icons/two.png"
+            alt="two icon"
+            class="top-icon-side"
+          />
+          <div id="aside-img2"></div>
+          <div class="aside-text">
+            <div class="side-text">
+              Lorem Ipsum has been the industry’s standard dummy text ever since
+              the 1500s.
+            </div>
+            <div class="side-details">
+              <img src="assets/icons/user.png" class="side-icons" />BY VIRGINIE
+              SIBERS
+            </div>
+            <button class="side-btn">Read</button>
+          </div>
+        </div>
+        <div class="aside-box">
+          <img
+            src="assets/icons/three.png"
+            alt="three icon"
+            class="top-icon-side"
+          />
+          <div id="aside-img3"></div>
+          <div class="aside-text">
+            <div class="side-text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+            </div>
+            <div class="side-details">
+              <img src="assets/icons/user.png" class="side-icons" />BY VIRGINIE
+              SIBERS
+            </div>
+            <button class="side-btn">Read</button>
+          </div>
+        </div>
+        <div class="aside-box">
+          <img
+            src="assets/icons/four.png"
+            alt="four icon"
+            class="top-icon-side"
+          />
+          <div id="aside-img4"></div>
+          <div class="aside-text">
+            <div class="side-text">
+              There are many variations of passages of Lorem Ipsum available.
+            </div>
+            <div class="side-details">
+              <img src="assets/icons/user.png" class="side-icons" />BY VIRGINIE
+              SIBERS
+            </div>
+            <button class="side-btn">Read</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

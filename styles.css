@@ -1,3 +1,619 @@
-h1 {
-    color: blue;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --effect-e2-color: #e2e2e2;
+  --effect-d5-color: #d5d5d5;
+  --text-a5-color: #a5a5a5;
+  --effect-3b-color: #3b3b3b;
+  --effect-64a-color: #64a51c;
+}
+
+/*NavBar*/
+.nav {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  margin: 0px 70px;
+  width: 15%;
+  padding: 20px;
+  padding-left: 60px;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+  align-content: space-between;
+  width: 40%;
+}
+
+.nav li {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 20px;
+  color: var(--text-a5-color);
+  text-align: center;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: var(--text-a5-color);
+}
+
+.nav li:hover {
+  color: white;
+  border-bottom: solid 2px var(--effect-64a-color);
+  font-size: 22px;
+}
+
+.nav li a:hover {
+  color: white;
+  border-bottom: solid 2px var(--effect-64a-color);
+}
+
+.menu-wrap {
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#menu-icon a {
+  display: none;
+}
+
+.menu-details {
+  display: none;
+}
+
+.menu-socials {
+  display: none;
+}
+
+/*Header*/
+.header {
+  padding-top: 50px;
+  width: 85%;
+  text-align: left;
+}
+
+.header-title {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/*Container*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 85%;
+  height: 60%;
+  justify-content: space-between;
+}
+
+/*Main*/
+.main {
+  background-color: var(--effect-3b-color);
+  width: 65%;
+  height: 100%;
+  position: relative;
+  color: var(--effect-d5-color);
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, transparent 80%, #3b3b3b 100%),
+    url("assets/images/img-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-text {
+  width: 70%;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  font-size: 210%;
+  color: var(--effect-e2-color);
+}
+
+.main-details {
+  width: 70%;
+  position: absolute;
+  display: flex;
+  bottom: 7%;
+  left: 5%;
+  gap: 15px;
+  font-size: 120%;
+}
+
+.detail {
+  flex-shrink: 0;
+}
+
+.main-icons {
+  width: 16px;
+  height: auto;
+  padding: 0px 8px;
+}
+
+.main-btn {
+  border: none;
+  position: absolute;
+  width: 12%;
+  height: 11%;
+  bottom: 7%;
+  right: 5%;
+  border-radius: 4px;
+  color: white;
+  background-color: blue;
+  font-weight: 400;
+  font-size: 140%;
+  font-family: "League Spartan", sans-serif;
+}
+
+.top-icon-main {
+  width: 30px;
+  position: absolute;
+  top: -2%;
+  left: -1%;
+}
+
+/*Aside*/
+.aside {
+  width: 33%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  justify-content: space-evenly;
+}
+
+.aside-box {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.top-icon-side {
+  width: 30px;
+  position: absolute;
+  top: -2%;
+  left: -2%;
+}
+
+#aside-img2 {
+  width: 30%;
+  height: 100%;
+  background-image: url("assets/images/img-2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+#aside-img3 {
+  width: 30%;
+  height: 100%;
+  background-image: url("assets/images/img-3.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+#aside-img4 {
+  width: 30%;
+  height: 100%;
+  background-image: url("assets/images/img-4.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.aside-text {
+  background-color: white;
+  position: relative;
+  width: 70%;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.side-text {
+  color: black;
+  position: absolute;
+  font-size: 140%;
+  width: 90%;
+  top: 8%;
+  left: 3%;
+}
+
+.side-details {
+  color: var(--text-a5-color);
+  position: absolute;
+  width: 90%;
+  bottom: 10%;
+  left: 3%;
+  font-size: 100%;
+}
+
+.side-icons {
+  width: 16px;
+  height: auto;
+  padding: 0px 8px;
+}
+
+.side-btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  color: blue;
+  font-family: "League Spartan", sans-serif;
+  font-size: 140%;
+  width: 20%;
+  bottom: 8%;
+  right: 4%;
+  height: 20%;
+  text-align: center;
+  font-weight: 400;
+}
+
+/*Tablet*/
+@media screen and (max-width: 1500px) {
+  /*NavBar*/
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    width: 50%;
+  }
+
+  .nav ul {
+    width: 90%;
+  }
+
+  .nav li {
+    font-size: 20px;
+  }
+
+  .menu-wrap {
+    display: none;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  #menu-icon a {
+    display: none;
+  }
+
+  .menu-details {
+    display: none;
+  }
+
+  .menu-socials {
+    display: none;
+  }
+
+  /*Container*/
+  .container {
+    height: 40%;
+  }
+
+  /*Main*/
+  .main-text {
+    font-size: 23px;
+  }
+
+  .main-details {
+    font-size: 15px;
+  }
+
+  .main-btn {
+    width: 80px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  /*Aside*/
+  .side-text {
+    font-size: 100%;
+  }
+
+  .side-details {
+    font-size: 70%;
+  }
+
+  .side-icons {
+    width: 12px;
+    height: auto;
+    padding: 0px 8px;
+  }
+
+  .side-btn {
+    font-size: 70%;
+  }
+
+  .aside-text {
+    width: 100%;
+  }
+
+  .aside-box {
+    height: 33%;
+  }
+}
+
+/*Phone*/
+@media screen and (max-width: 650px) {
+  /*NavBar*/
+  .nav {
+    flex-direction: row;
+  }
+
+  .item-large {
+    display: none;
+  }
+
+  .nav ul {
+    padding: 10px 0px;
+    margin: 0;
+    align-content: center;
+    gap: 0;
+  }
+
+  .nav li {
+    flex-shrink: 1;
+  }
+
+  #logo {
+    width: 45%;
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  /*Hamburger Menu*/
+  #menu-icon {
+    display: inline;
+  }
+
+  #menu-icon a {
+    display: none;
+  }
+
+  .menu-wrap {
+    width: 100%;
+    background-color: var(--effect-3b-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    margin: 0;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .menu li {
+    width: fit-content;
+    list-style: none;
+    text-align: center;
+    color: var(--effect-d5-color);
+    font-size: 32px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: var(--effect-d5-color);
+  }
+
+  .menu li:hover {
+    color: white;
+    border-bottom: solid 2px var(--effect-64a-color);
+    font-size: 35px;
+  }
+
+  .menu li a:hover {
+    color: white;
+    font-size: 35px;
+  }
+
+  .footer {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .menu-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .menu-socials {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-details ul {
+    padding-left: 0;
+    width: 90%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-socials ul {
+    padding-left: 0;
+    width: 60%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-details li {
+    font-size: 120%;
+    color: var(--effect-d5-color);
+  }
+
+  .menu-details li:hover {
+    font-size: 130%;
+    color: var(--effect-64a-color);
+  }
+
+  /*Header*/
+  .header {
+    padding-top: 50px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .header-title {
+    font-size: 30px;
+  }
+
+  /*Container*/
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 85%;
+    gap: 20px;
+  }
+
+  /*Main*/
+  .main {
+    background-color: white;
+    width: 100%;
+    height: 60%;
+    background-image: linear-gradient(to bottom, transparent 30%, #3b3b3b 100%),
+      url("assets/images/img-1.jpg");
+  }
+
+  .main-btn {
+    width: 60px;
+    height: 40px;
+  }
+
+  .main-details {
+    width: 90%;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    flex-direction: column;
+    justify-items: flex-start;
+    gap: 0;
+    font-size: 12px;
+  }
+
+  .top-icon-main {
+    width: 20px;
+  }
+
+  /*Aside*/
+  .aside {
+    width: 100%;
+    height: 40%;
+  }
+
+  .detail {
+    flex-shrink: 1;
+  }
+
+  .side-text {
+    font-size: 12px;
+  }
+
+  .top-icon-side {
+    width: 20px;
+  }
+}
+
+/*Handle specific cases*/
+@media screen and (max-width: 900px) {
+  /*Header*/
+  .header {
+    padding-top: 50px;
+    width: 80%;
+    text-align: left;
+  }
+
+  /*Container*/
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 85%;
+  }
+
+  /*Main*/
+  .main {
+    background-color: white;
+    width: 100%;
+    height: 60%;
+  }
+
+  .main-text {
+    width: 90%;
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+    font-size: 18px;
+  }
+
+  .main-icons {
+    width: 10px;
+  }
+
+  /*Aside*/
+  .aside {
+    width: 100%;
+    height: 40%;
+  }
+
+  .side-btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-btn {
+    top: 7%;
+    right: 5%;
+  }
 }
